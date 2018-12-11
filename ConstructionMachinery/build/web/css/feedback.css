@@ -1,0 +1,283 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 100%;
+    font-family: serif, sans-serif;
+    background: #ebebeb;
+}
+
+header,
+section,
+aside {
+    display: block;
+}
+
+/*Format for top header*/
+
+header {
+    background-color: #fdd504;
+    box-shadow: 0 0 15px #ccc;
+}
+
+#header_wrapper {
+    /*    1200px/1366px*/
+    width: 87.84773060029283%;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header_wrapper:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+#logo {
+    text-decoration: none;
+    color: blue;
+    font-size: 1.25em;
+    /*20px/16px*/
+    display: table;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+#logo img,
+#logo span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+#main_nav {
+    display: block;
+    display: none;
+    /*1050px/1200px*100*/
+    width: 200px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: beige;
+}
+
+#main_nav a {
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    vertical-align: middle;
+}
+
+#main_nav span {
+    display: none;
+}
+
+/*viewport >= 690px*/
+
+@media screen and (min-width: 690px) {
+    #main_nav {
+        display: table;
+        /*    float: right;*/
+        /*1050px/1200px*100*/
+        width: 100%;
+        text-align: center;
+        position: static;
+        background-color: transparent;
+    }
+
+    #main_nav a,
+    #main_nav span {
+        display: table-cell;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #000;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        vertical-align: middle;
+    }
+
+    #main_nav span {
+        display: none;
+    }
+}
+
+/*viewport >= 1046px*/
+
+@media screen and (min-width: 1046px) {
+    #logo {
+        text-decoration: none;
+        color: blue;
+        font-size: 1.25em;
+        /*20px/16px*/
+        display: block;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-align: center;
+    }
+
+    #logo img,
+    #logo span {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+
+    #main_nav {
+        display: table;
+        /*1050px/1200px*100*/
+        width: 100%;
+        text-align: center;
+    }
+
+    #main_nav a,
+    #main_nav span {
+        display: table-cell;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #000;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        vertical-align: middle;
+    }
+
+}
+
+/*viewport >= 1247px*/
+
+@media screen and (min-width:1247px) {
+    #logo {
+        text-decoration: none;
+        color: blue;
+        font-size: 1.25em;
+        /*20px/16px*/
+        float: left;
+        display: table;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-align: center;
+    }
+    #logo img,
+    #logo span {
+        display: table-cell;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+    #main_nav {
+        display: table;
+        float: right;
+        /*1050px/1200px*100*/
+        width: 87.5%;
+        text-align: center;
+    }
+    #main_nav a,
+    #main_nav span {
+        display: table-cell;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #000;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        vertical-align: middle;
+    }
+
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+    background-color: darkgray;
+}
+
+/*For all devices*/
+
+#search_box input[type='text'] {
+    width: 300px;
+    height: 30px;
+    padding: 5px;
+    outline: 0;
+    border: 0;
+    float: left;
+}
+
+#button_search {
+    float: left;
+    padding: 5px 10px;
+    height: 30px;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+#main_nav a:hover {
+    background-color: #ebebeb;
+}
+
+#main_nav a i {
+    display: block;
+}
+
+/*Format body layout*/
+
+#body_wrapper {
+    width: 87.84773060029283%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#body_wrapper:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+#left_col {
+    /*    850px/1200px*/
+    width: 100%;
+    float: left;
+}

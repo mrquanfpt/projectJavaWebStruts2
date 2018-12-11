@@ -1,0 +1,324 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 100%;
+    font-family: serif, sans-serif;
+    background: #ebebeb;
+}
+
+header,
+section,
+aside {
+    display: block;
+}
+
+/*Format for top header*/
+
+header {
+    background-color: #fdd504;
+    box-shadow: 0 0 15px #ccc;
+}
+
+#header_wrapper {
+    /*    1200px/1366px*/
+    width: 87.84773060029283%;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header_wrapper:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+#logo {
+    text-decoration: none;
+    color: blue;
+    font-size: 1.25em;
+    /*20px/16px*/
+    display: table;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+#logo img,
+#logo span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+#main_nav {
+    display: block;
+    display: none;
+    /*1050px/1200px*100*/
+    width: 200px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: beige;
+}
+
+#main_nav a {
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    vertical-align: middle;
+}
+
+#main_nav span {
+    display: none;
+}
+
+/*viewport >= 690px*/
+
+@media screen and (min-width: 690px) {
+    #main_nav {
+        display: table;
+        /*    float: right;*/
+        /*1050px/1200px*100*/
+        width: 100%;
+        text-align: center;
+        position: static;
+        background-color: transparent;
+    }
+
+    #main_nav a,
+    #main_nav span {
+        display: table-cell;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #000;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        vertical-align: middle;
+    }
+
+    #main_nav span {
+        display: none;
+    }
+}
+
+/*viewport >= 1046px*/
+
+@media screen and (min-width: 1046px) {
+    #logo {
+        text-decoration: none;
+        color: blue;
+        font-size: 1.25em;
+        /*20px/16px*/
+        display: block;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-align: center;
+    }
+
+    #logo img,
+    #logo span {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+
+    #main_nav {
+        display: table;
+        /*1050px/1200px*100*/
+        width: 100%;
+        text-align: center;
+    }
+
+    #main_nav a,
+    #main_nav span {
+        display: table-cell;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #000;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        vertical-align: middle;
+    }
+
+}
+
+/*viewport >= 1247px*/
+
+@media screen and (min-width:1247px) {
+    #logo {
+        text-decoration: none;
+        color: blue;
+        font-size: 1.25em;
+        /*20px/16px*/
+        float: left;
+        display: table;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-align: center;
+    }
+    #logo img,
+    #logo span {
+        display: table-cell;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+    #main_nav {
+        display: table;
+        float: right;
+        /*1050px/1200px*100*/
+        width: 87.5%;
+        text-align: center;
+    }
+    #main_nav a,
+    #main_nav span {
+        display: table-cell;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #000;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        vertical-align: middle;
+    }
+
+}
+
+* {box-sizing: border-box}
+
+
+/*For all devices*/
+
+#search_box input[type='text'] {
+    width: 300px;
+    height: 30px;
+    padding: 5px;
+    outline: 0;
+    border: 0;
+    float: left;
+}
+
+#button_search {
+    float: left;
+    padding: 5px 10px;
+    height: 30px;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+#main_nav a:hover {
+    background-color: #ebebeb;
+}
+
+#main_nav a i {
+    display: block;
+}
+
+/*Format body layout*/
+
+#body_wrapper {
+    width: 87.84773060029283%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#body_wrapper:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+#left_col {
+    /*    850px/1200px*/
+    width: 100%;
+    float: left;
+}
+
+/* Bordered form */
+form {
+    border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+    background-color: darkgray;
+}
